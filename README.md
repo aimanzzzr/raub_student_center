@@ -13,8 +13,8 @@ A student portal system built using web development tools like:
   - PHPMYADMIN
  
 # ADDITIONAL FILES
-  - [Images](https://google.com/) if images folder does not exist in the repo
-  - [Styles](https://google.com/) if styles folder does not exist in the repo
+  - if [Images](https://google.com/) folder does not exist in the repo
+  - if [Styles](https://google.com/) folder does not exist in the repo
 
 # INSTALLATION
  - Download all the file from the repo.
