@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Raub Student System</title>
+		<link rel="shortcut icon" href="#">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body, html {
+    			height: 100%;
+			}
+			.bg{
+    			background-image: url("../images/sources/back.png");
+    			height: 19%;
+			    background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+			}
+			.inputForm{
+				width:145px;
+			}
+			.topnav {
+ 			   background-color: #641487;
+  			   overflow: hidden;
+			}
+			/* Style the links inside the navigation bar */
+			.topnav a {
+    			float: left;
+    			color: #f2f2f2;
+    			text-align: center;
+    			padding: 10px 10px;
+    			text-decoration: none;
+    			font-size: 17px;
+			}
+			/* Change the color of links on hover */
+			.topnav a:hover {
+    			background-color: #141987;
+    			color: white;
+			}
+			@media screen and (max-height: 720px) {
+    			.bg{
+    				height:20%;
+    			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg"></div>
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="http://istudent.uitm.edu.my/nsp/home/main.asp" target="_blank">Student Portal</a>
+			<a href="https://koleksi.uitm.edu.my/eqps/" target="_blank">Eqps</a>
+      <a href="about.html">About</a>
+		</div>
+		<center>
+		<div>
+			<form method="post" action="registeruser.php">
+			<table>
+				<tr>
+					<td colspan="2"><center><img src="../images/sources/logo_uitm.svg" width="300" height="180"></center></td>
+				</tr>
+				<tr>
+					<td colspan="2"><center><b>Raub Student System</b></center></td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>Student Number</td>
+					<td><input type="text" name="studentnumber" class="inputForm" placeholder="Student Number.."></td>
+				</tr>
+				<tr>
+					<td>User Name</td>
+					<td><input type="text" name="username" placeholder="User Name.." class="inputForm"></td>
+				</tr>
+        <tr>
+					<td>Password</td>
+					<td><input type="password" id="password" name="password" placeholder="Password.." class="inputForm" minlength="8" maxlength="15"></td>
+				</tr>
+				<tr>
+					<td>Biografi</td>
+					<td><input type="text" name="userbio" class="inputForm" placeholder="Biography.."></td>
+				</tr>
+        <tr>
+					<td>Interest</td>
+					<td><input type="text" name="interest" class="inputForm" placeholder="Interest.." ></td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;"><input type="checkbox" onclick="showPassword()">Show Password</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2"><center><input type="submit" name="submit" value="Register"></center></td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</center>
+	<script type="text/javascript">
+		function showPassword() {
+    		var x = document.getElementById("password");
+    		if (x.type === "password") {
+        		x.type = "text";
+    		} else {
+        		x.type = "password";
+    		}
+		}
+	</script>
+	</body>
+</html>
