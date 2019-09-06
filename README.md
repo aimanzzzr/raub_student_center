@@ -11,10 +11,6 @@ A student portal system built using web development tools like:
 # REQUIREMENTS
   - XAMPP
   - PHPMYADMIN
- 
-# ADDITIONAL FILES
-  - if [Images](https://google.com/) folder does not exist in the repo
-  - if [Styles](https://google.com/) folder does not exist in the repo
 
 # INSTALLATION
  - Download all the file from the repo.
